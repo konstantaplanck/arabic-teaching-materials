@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.app {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 700px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Kartu Kosakata */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  background: #fff8f9;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card span {
+  font-size: 2rem;
+  display: block;
+}
+
+.card button {
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #ff9eb5;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.card button:hover {
+  transform: scale(1.1);
+  background: #ff758f;
+}
+
+/* Tombol umum */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff758f, #ff9eb5);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  margin: 10px auto;
+  display: block;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Quiz */
+#quiz-container {
+  margin-top: 15px;
+}
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.quiz-option:hover {
+  transform: scale(1.05);
+}
+
+.quiz-color-0 { background: #7ec8e3; }
+.quiz-color-1 { background: #ff9eb5; }
+.quiz-color-2 { background: #a58fff; }
+.quiz-color-3 { background: #ffb347; }
+
+.correct { background: #4caf50 !important; }
+.wrong { background: #f44336 !important; }
+
+/* Latihan Bicara */
+#speech-result {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Audio Status */
+.audio-playing {
+  background: #4caf50 !important;
+  transform: scale(1.2) !important;
+}

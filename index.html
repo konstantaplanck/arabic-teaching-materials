@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mufrodat Arab Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>📚 Belajar Mufrodat Arab</h1>
+
+    <!-- Kosakata -->
+    <section>
+      <h2>Daftar Kosakata</h2>
+      <div id="cards-container" class="cards"></div>
+    </section>
+
+    <!-- Quiz -->
+    <section>
+      <h2>🎮 Quiz Pilihan Ganda</h2>
+      <button class="btn" onclick="startQuiz()">Mulai Quiz</button>
+      <div id="quiz-container"></div>
+    </section>
+
+    <!-- Latihan Bicara -->
+    <section>
+      <h2>🎤 Latihan Bicara</h2>
+      <p>Klik mic lalu ucapkan kata Arab di atas!</p>
+      <button class="btn" onclick="startSpeech()">🎤 Mulai Bicara</button>
+      <p id="speech-result"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
